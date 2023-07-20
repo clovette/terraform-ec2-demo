@@ -4,7 +4,7 @@ pipeline {
         stage('Git checkout') {
             steps {
                 echo 'Cloning the Terraform Project from Github'
-                git 'https://github.com/avinashmamidi/terraform.git'
+                git 'https://github.com/clovette/terraform-ec2-demo.git'
             }
         }
         stage('Terraform INIT') {
