@@ -7,12 +7,14 @@ pipeline {
                git branch: 'main', url: 'https://github.com/clovette/terraform-ec2-demo.git'
             }
         }
+
         stage('Terraform INIT') {
             steps {
                 echo 'Terraform INIT'
                 sh 'terraform init'
             }
         }
+
         stage('Terraform PLAN') {
             steps {
                 echo 'Terraform PLAN'
